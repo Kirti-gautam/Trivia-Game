@@ -1,0 +1,103 @@
+.mainCard {
+  width: 70vw;
+  height: 50vh;
+  margin: auto;
+  margin-top: 6rem;
+}
+.question {
+  background-color: #2ecc71;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 2px 2px 10px 10px #7fecad;
+  margin-bottom: 50px;
+}
+.heading {
+  color: #666;
+  text-align: center;
+}
+
+input[type="text"] {
+  width: 80%;
+  padding: 12px 20px;
+  margin: 8px auto;
+  box-sizing: border-box;
+  border: 1px solid #7fecad;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  background-color: #7fecad;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 55px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #7fecad;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin-top: 50px;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+.button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.loader {
+  position: relative;
+  left: 30%;
+  top: 30%;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid green;
+  border-bottom: 16px solid green;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.checkAnswer {
+  margin: 30px;
+  font-size: 24px;
+  border: 1px solid green;
+}
+
+.error {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 30px;
+  color: red;
+}
